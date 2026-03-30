@@ -1,3 +1,2 @@
-Falha ao carregar mods: Error in assignID: item with name 'flux-dust' does not exist.
-
-Source: formation-core (recipe).
+Falha ao carregar mods: Error while loading entity prototype "inscriber-entidade" (assembling-machine): Value must be a list or dictionary in property tree at ROOT.assembling-machine.inscriber-entidade.energy_source.emissions_per_minute
+Modifications: Applied Energistics 2

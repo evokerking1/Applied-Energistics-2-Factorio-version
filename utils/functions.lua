@@ -1,5 +1,15 @@
 local Module = {}
 local LDA = require("__LDA-LIB__/init")
+-- utils.array_contains(array, value)
+-- utils.tableMerge(target, source, overwrite)
+-- utils.createBoundingBox(x_max, y_max)
+-- utils.createModuleSpec(slots, icon_shift)
+-- utils.createResistance(resistenceType, percent)
+-- utils.getFullResistance(percent)
+-- utils.getAudio(filename, volume)
+-- utils.getSequentialAudioList(base_filename, start_index, end_index, volume)
+-- utils.getPicture(filename, size, scale, mipmap_count)
+-- utils.getSequentialPictureList(base_filename, start_index, end_index, size, scale, mipmap_count)
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1

@@ -1,141 +1,145 @@
-local LDA = require('__LDA-LIB__/init')
-local PATH = LDA.setBasePath('Applied-Energistics-2')
+local LDA = require("__LDA-LIB__/init")
+local PATH = LDA.setBasePath("Applied-Energistics-2")
+local LDAUtils = LDA.utils
+local utilsEnergySource = LDA.utilsEnergySource
+-- createElectricEnergySource(usage_priority: any, buffer_capacity: any, input_flow_limit: any, output_flow_limit: any, emissions_per_minute: any, render_no_power_icon: any, render_no_network_icon: any, params: any)
 
-data:extend({
+data:extend(
     {
-        type = "assembling-machine",
-        name = "inscriber-entidade",
-        -- category = "entity",
-        icon = PATH .. "graficos/blocos/inscriber.png",
-        icon_size = 128,
-        icon_mipmaps = 4,
-        minable = { mining_time = 1, result = "inscriber" },
-        max_health = 350,
-        crafting_speed = 4,
-        ingredient_count = 3,
-        off_when_no_fluid_recipe = true,
-        energy_usage = "300kW",
-        buffer_capacity = "1MW",
-        crafting_categories = { "inscriber" },
-        -- corpse = "big-remnants",
-        corpse = "assembling-machine-2-remnants",
-        -- dying_explosion = "big-explosion",
-        dying_explosion = "assembling-machine-2-explosion",
-        alert_icon_shift = { -0.09375, -0.375 },
-        collision_box = {
-            { -1.2, -1.2 },
-            { 1.2,  1.2 }
-        },
-        selection_box = {
-            { -1.5, -1.5 },
-            { 1.5,  1.5 }
-        },
-        drawing_box = {
-            { -1.5, -1.5 },
-            { 1.5,  1.5 }
-        },
-        energy_source = {
-            emissions_per_minute = 3,
-            type = "electric",
-            usage_priority = "secondary-input"
-        },
-        resistances = {
-            {
-                type = "fire",
-                percent = 70
-            }
-        },
-        damaged_trigger_effect = {
-            entity_name = "spark-explosion",
-            type = "create-entity",
-            damage_type_filters = "fire",
-            offsets = { { 0, 1 } },
-            offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
-        },
-        allowed_effects = {
-            "consumption",
-            "speed",
-            "productivity",
-            "pollution"
-        },
-        flags = {
-            "placeable-neutral",
-            "placeable-player",
-            "player-creation",
-            "not-upgradable"
-        },
-        placeable_by = {
-            item = "inscriber",
-            count = 1
-        },
-        module_specification = {
-            module_slots = 2,
-            module_info_icon_shift = { 0, 0.5 }
-        },
-        working_sound = {
-            sound = {
-                { filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45 }
-            },
-            fade_in_ticks = 4,
-            audible_distance_modifier = 0.5,
-            fade_out_ticks = 20
-        },
-        vehicle_impact_sound = {
-            {
-                filename = "__base__/sound/car-metal-impact-2.ogg",
-                volume = 0.5
-            },
-            {
-                filename = "__base__/sound/car-metal-impact-3.ogg",
-                volume = 0.5
-            },
-            {
-                filename = "__base__/sound/car-metal-impact-4.ogg",
-                volume = 0.5
-            },
-            {
-                filename = "__base__/sound/car-metal-impact-5.ogg",
-                volume = 0.5
-            },
-            {
-                filename = "__base__/sound/car-metal-impact-6.ogg",
-                volume = 0.5
-            }
-        },
-        animation = {
-            layers = {
+        {
+            type = "assembling-machine",
+            name = "inscriber-entidade",
+            -- category = "entity",
+            icon = PATH .. "graficos/blocos/inscriber.png",
+            icon_size = 128,
+            icon_mipmaps = 4,
+            minable = {mining_time = 1, result = "inscriber"},
+            max_health = 350,
+            crafting_speed = 4,
+            ingredient_count = 3,
+            off_when_no_fluid_recipe = true,
+            energy_usage = "300kW",
+            buffer_capacity = "1MW",
+            crafting_categories = {"inscriber"},
+            -- corpse = "big-remnants",
+            corpse = "assembling-machine-2-remnants",
+            -- dying_explosion = "big-explosion",
+            dying_explosion = "assembling-machine-2-explosion",
+            alert_icon_shift = {-0.09375, -0.375},
+            collision_box = LDAUtils.createBoundingBox(-1.2, 1.2),
+            selection_box = LDAUtils.createBoundingBox(-1.5, 1.5),
+            drawing_box = LDAUtils.createBoundingBox(-1.5, 1.5),
+            energy_source = utilsEnergySource.createElectricEnergySource(
+                "secondary-input",
+                -- buffer_capacity
+                nil,
+                -- input_flow_limit
+                "500kW",
+                -- output_flow_limit
+                "300kW",
+                -- emissions_per_minute
+                0,
+                false,
+                false
+            ),
+            resistances = {
                 {
-                    frame_count = 1,
-                    filename = PATH .. "graficos/blocos/inscriber.png",
-                    hr_version = {
+                    type = "fire",
+                    percent = 70
+                }
+            },
+            damaged_trigger_effect = {
+                entity_name = "spark-explosion",
+                type = "create-entity",
+                damage_type_filters = "fire",
+                offsets = {{0, 1}},
+                offset_deviation = {{-0.5, -0.5}, {0.5, 0.5}}
+            },
+            allowed_effects = {
+                "consumption",
+                "speed",
+                "productivity",
+                "pollution"
+            },
+            flags = {
+                "placeable-neutral",
+                "placeable-player",
+                "player-creation",
+                "not-upgradable"
+            },
+            placeable_by = {
+                item = "inscriber",
+                count = 1
+            },
+            module_specification = {
+                module_slots = 2,
+                module_info_icon_shift = {0, 0.5}
+            },
+            working_sound = {
+                sound = {
+                    {filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45}
+                },
+                fade_in_ticks = 4,
+                audible_distance_modifier = 0.5,
+                fade_out_ticks = 20
+            },
+            vehicle_impact_sound = {
+                {
+                    filename = "__base__/sound/car-metal-impact-2.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/car-metal-impact-3.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/car-metal-impact-4.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/car-metal-impact-5.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/car-metal-impact-6.ogg",
+                    volume = 0.5
+                }
+            },
+            animation = {
+                layers = {
+                    {
                         frame_count = 1,
                         filename = PATH .. "graficos/blocos/inscriber.png",
+                        hr_version = {
+                            frame_count = 1,
+                            filename = PATH .. "graficos/blocos/inscriber.png",
+                            height = 128,
+                            line_length = 1,
+                            shift = {0, 0.125},
+                            scale = 0.5,
+                            priority = "high",
+                            width = 128
+                        },
                         height = 128,
                         line_length = 1,
-                        shift = { 0, 0.125 },
-                        scale = 0.5,
+                        shift = {0, 0.125},
                         priority = "high",
                         width = 128
-                    },
-                    height = 128,
-                    line_length = 1,
-                    shift = { 0, 0.125 },
-                    priority = "high",
-                    width = 128
+                    }
+                }
+            },
+            close_sound = {
+                {
+                    filename = "__base__/sound/machine-close.ogg",
+                    volume = 0.5
+                }
+            },
+            open_sound = {
+                {
+                    filename = "__base__/sound/machine-open.ogg",
+                    volume = 0.5
                 }
             }
-        },
-        close_sound = {
-            {
-                filename = "__base__/sound/machine-close.ogg",
-                volume = 0.5
-            }
-        },
-        open_sound = {
-            {
-                filename = "__base__/sound/machine-open.ogg",
-                volume = 0.5
-            }
-        },
+        }
     }
-})
+)
