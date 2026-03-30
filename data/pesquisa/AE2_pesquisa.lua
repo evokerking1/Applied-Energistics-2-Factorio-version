@@ -4,7 +4,7 @@ local PATH = LDA.setBasePath('Applied-Energistics-2')
 data:extend({ {
     type = "technology",
     name = "AE2",
-    icon = PATH.. "graficos/technology/AE2.png",
+    icon = PATH.. "graphics/technology/AE2.png",
     icon_size = 126,
     icon_mipmaps = 4,
     prerequisites = {
@@ -101,7 +101,7 @@ data:extend({ {
 --     {
 --     type = "technology",
 --     name = "AE2-singularidade",
---     icon = PATH.. "graficos/technology/singularity.png",
+--     icon = PATH.. "graphics/technology/singularity.png",
 --     icon_size = 128,
 --     icon_mipmaps = 4,
 --     prerequisites = {
@@ -136,7 +136,7 @@ data:extend({ {
 -- data:extend({ {
 --     type = "technology",
 --     name = "AE2-autocraft",
---     icon = PATH.. "graficos/technology/autocraft.png",
+--     icon = PATH.. "graphics/technology/autocraft.png",
 --     icon_size = 128,
 --     icon_mipmaps = 4,
 --     prerequisites = {

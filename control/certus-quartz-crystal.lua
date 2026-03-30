@@ -5,7 +5,7 @@ data:extend({
   {
     type = "resource",
     name = "certus-quartz-crystal-resource",
-    icon = PATH .. "graficos/itens/certus_quartz_crystal.png", -- Adicione o ícone do minério
+    icon = PATH .. "graphics/icons/certus_quartz_crystal.png", -- Adicione o ícone do minério
     icon_size = 128,
     icon_mipmaps = 4,
     flags = { "placeable-neutral" },
@@ -75,10 +75,10 @@ data:extend({
     stages = {
       sheet = {
         frame_count = 8,
-        filename = PATH .. "graficos/blocos/hr_certus_quartz_crystal.png",
+        filename = PATH .. "graphics/blocos/hr_certus_quartz_crystal.png",
         hr_version = {
           frame_count = 8,
-          filename = PATH .. "graficos/blocos/hr_certus_quartz_crystal.png",
+          filename = PATH .. "graphics/blocos/hr_certus_quartz_crystal.png",
           scale = 0.5,
           priority = "extra-high",
           size = 128,

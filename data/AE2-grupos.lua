@@ -1,5 +1,6 @@
--- createItemGroup(group_name, group_order, icon_filename, icon_size, subgroups, icon_mipmaps)
+-- createItemGroup(group_name, group_order, icon_size, subgroups, icon_mipmaps)
 local LDAFunctions = require("__LDA-LIB__/init")
+local PATH = LDAFunctions.setBasePath("Applied-Energistics-2")
 local ae2_subgroups = {
     "auto-craft",
     "component",
@@ -16,7 +17,7 @@ local ae2Category =
     -- order
     "e",
     -- icon
-    "__Applied-Energistics-2__/graficos/technology/AE2.png",
+    -- "__Applied-Energistics-2__/graphics/technology/AE2.png",
     -- icon_size
     126,
     -- item-subgroup
@@ -35,7 +36,7 @@ data:extend(ae2Category)
 --             -- nome da categoria
 --             name = "AE2-category",
 --             order = "e",
---             icon = "__Applied-Energistics-2__/graficos/technology/AE2.png",
+--             icon = "__Applied-Energistics-2__/graphics/technology/AE2.png",
 --             icon_size = 126,
 --             icon_mipmaps = 2
 --         },

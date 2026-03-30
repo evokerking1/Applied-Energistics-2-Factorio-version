@@ -21,7 +21,7 @@ data:extend(
         {
             type = "item",
             name = "certus-quartz-crystal",
-            icon = PATH .. "graficos/itens/certus-quartz-crystal.png",
+            icon = PATH .. "graphics/icons/certus-quartz-crystal.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[certus-quartz-crystal]",

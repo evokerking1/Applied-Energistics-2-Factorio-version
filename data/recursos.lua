@@ -1,3 +1,4 @@
+
 local LDA = require("__LDA-LIB__/init")
 local PATH = LDA.setBasePath("Applied-Energistics-2")
 
@@ -15,7 +16,7 @@ local PATH = LDA.setBasePath("Applied-Energistics-2")
 --         {
 --             type = "item",
 --             name = "formation-core",
---             icon = PATH .. "graficos/itens/formation_core.png",
+--             icon = PATH .. "graphics/icons/formation_core.png",
 --             icon_size = 128,
 --             subgroup = "component",
 --             order = "AE2-component[formation-core]",
@@ -39,7 +40,7 @@ local PATH = LDA.setBasePath("Applied-Energistics-2")
 --         {
 --             type = "item",
 --             name = "annihilation-core",
---             icon = PATH .. "graficos/itens/annihilation_core.png",
+--             icon = PATH .. "graphics/icons/annihilation_core.png",
 --             icon_size = 128,
 --             subgroup = "component",
 --             order = "AE2-component[annihilation-core]",
@@ -63,7 +64,7 @@ data:extend(
         {
             type = "item",
             name = "drive",
-            icon = PATH .. "graficos/blocos/drive.png",
+            icon = PATH .. "graphics/blocos/drive.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[drive]",
@@ -87,7 +88,7 @@ data:extend(
         {
             type = "item",
             name = "1k-crafting-storage",
-            icon = PATH .. "graficos/blocos/1k_crafting_storage.png",
+            icon = PATH .. "graphics/blocos/1k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[1k-crafting-storage]",
@@ -111,7 +112,7 @@ data:extend(
         {
             type = "item",
             name = "4k-crafting-storage",
-            icon = PATH .. "graficos/blocos/4k_crafting_storage.png",
+            icon = PATH .. "graphics/blocos/4k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[4k-crafting-storage]",
@@ -135,7 +136,7 @@ data:extend(
         {
             type = "item",
             name = "16k-crafting-storage",
-            icon = PATH .. "graficos/blocos/16k_crafting_storage.png",
+            icon = PATH .. "graphics/blocos/16k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[16k-crafting-storage]",
@@ -159,7 +160,7 @@ data:extend(
         {
             type = "item",
             name = "64k-crafting-storage",
-            icon = PATH .. "graficos/blocos/64k_crafting_storage.png",
+            icon = PATH .. "graphics/blocos/64k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[64k-crafting-storage]",
@@ -183,7 +184,7 @@ data:extend(
         {
             type = "item",
             name = "cable-pattern-provider",
-            icon = PATH .. "graficos/blocos/cable_pattern_provider.png",
+            icon = PATH .. "graphics/blocos/cable_pattern_provider.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[cable-pattern-provider]",
@@ -206,7 +207,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-co-processing-unit",
-            icon = PATH .. "graficos/blocos/crafting_co_processing_unit.png",
+            icon = PATH .. "graphics/blocos/crafting_co_processing_unit.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-co-processing-unit]",
@@ -229,7 +230,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-monitor",
-            icon = PATH .. "graficos/blocos/crafting_monitor.png",
+            icon = PATH .. "graphics/blocos/crafting_monitor.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-monitor]",
@@ -253,7 +254,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-terminal",
-            icon = PATH .. "graficos/blocos/crafting_terminal.png",
+            icon = PATH .. "graphics/blocos/crafting_terminal.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-terminal]",
@@ -277,7 +278,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-unit",
-            icon = PATH .. "graficos/blocos/crafting_unit.png",
+            icon = PATH .. "graphics/blocos/crafting_unit.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-unit]",
@@ -301,7 +302,7 @@ data:extend(
         {
             type = "item",
             name = "inscriber",
-            icon = PATH .. "graficos/blocos/inscriber.png",
+            icon = PATH .. "graphics/blocos/inscriber.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[inscriber]",
@@ -310,7 +311,7 @@ data:extend(
         }, -- receita
         {
             type = "recipe",
-            name = "inscriber-recipe",
+            name = "inscriber",
             category = "advanced-crafting",
             enabled = true,
             ingredients = {{"iron-plate", 150}, {"copper-cable", 200}, {"copper-plate", 100}},
@@ -325,7 +326,7 @@ data:extend(
         {
             type = "item",
             name = "interface",
-            icon = PATH .. "graficos/blocos/interface.png",
+            icon = PATH .. "graphics/blocos/interface.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[interface]",
@@ -349,7 +350,7 @@ data:extend(
         {
             type = "item",
             name = "molecular-assembler",
-            icon = PATH .. "graficos/blocos/molecular_assembler.png",
+            icon = PATH .. "graphics/blocos/molecular_assembler.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[molecular-assembler]",
@@ -378,7 +379,7 @@ data:extend(
         {
             type = "item",
             name = "pattern-access-terminal",
-            icon = PATH .. "graficos/blocos/pattern_access_terminal.png",
+            icon = PATH .. "graphics/blocos/pattern_access_terminal.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[pattern-access-terminal]",
@@ -402,7 +403,7 @@ data:extend(
         {
             type = "item",
             name = "pattern-provider",
-            icon = PATH .. "graficos/blocos/pattern_provider.png",
+            icon = PATH .. "graphics/blocos/pattern_provider.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[pattern-provider]",
@@ -426,7 +427,7 @@ data:extend(
         {
             type = "item",
             name = "storage-monitor",
-            icon = PATH .. "graficos/blocos/storage_monitor.png",
+            icon = PATH .. "graphics/blocos/storage_monitor.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[storage-monitor]",
@@ -450,7 +451,7 @@ data:extend(
         {
             type = "item",
             name = "terminal",
-            icon = PATH .. "graficos/blocos/terminal.png",
+            icon = PATH .. "graphics/blocos/terminal.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[terminal]",
@@ -481,7 +482,7 @@ data:extend(
         {
             type = "item",
             name = "engineering-processor",
-            icon = PATH .. "graficos/itens/engineering_processor.png",
+            icon = PATH .. "graphics/icons/engineering_processor.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[engineering-processor]",
@@ -496,7 +497,7 @@ data:extend(
         {
             type = "item",
             name = "blank-pattern",
-            icon = PATH .. "graficos/itens/blank_pattern.png",
+            icon = PATH .. "graphics/icons/blank_pattern.png",
             icon_size = 128,
             subgroup = "auto-craft",
             order = "AE2-auto-craft[blank-pattern]",
@@ -520,7 +521,7 @@ data:extend(
         {
             type = "item",
             name = "calculation-processor",
-            icon = PATH .. "graficos/itens/calculation_processor.png",
+            icon = PATH .. "graphics/icons/calculation_processor.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[calculation-processor]",
@@ -535,7 +536,7 @@ data:extend(
         {
             type = "item",
             name = "cell-component-1k",
-            icon = PATH .. "graficos/itens/cell_component_1k.png",
+            icon = PATH .. "graphics/icons/cell_component_1k.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[cell-component-1k]",
@@ -559,7 +560,7 @@ data:extend(
         {
             type = "item",
             name = "cell-component-4k",
-            icon = PATH .. "graficos/itens/cell_component_4k.png",
+            icon = PATH .. "graphics/icons/cell_component_4k.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[cell-component-4k]",
@@ -583,7 +584,7 @@ data:extend(
         {
             type = "item",
             name = "cell-component-16k",
-            icon = PATH .. "graficos/itens/cell_component_16k.png",
+            icon = PATH .. "graphics/icons/cell_component_16k.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[cell-component-16k]",
@@ -607,7 +608,7 @@ data:extend(
         {
             type = "item",
             name = "cell-component-64k",
-            icon = PATH .. "graficos/itens/cell_component_64k.png",
+            icon = PATH .. "graphics/icons/cell_component_64k.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[cell-component-64k]",
@@ -631,7 +632,7 @@ data:extend(
         {
             type = "item",
             name = "item-cell-housing",
-            icon = PATH .. "graficos/itens/item_cell_housing.png",
+            icon = PATH .. "graphics/icons/item_cell_housing.png",
             icon_size = 128,
             subgroup = "storage-ME",
             order = "AE2-storage-ME[item-cell-housing]",
@@ -655,7 +656,7 @@ data:extend(
         {
             type = "item",
             name = "item-storage-cell-1k",
-            icon = PATH .. "graficos/itens/item_storage_cell_1k.png",
+            icon = PATH .. "graphics/icons/item_storage_cell_1k.png",
             icon_size = 128,
             subgroup = "storage-ME",
             order = "AE2-storage-ME[item-storage-cell-1k]",
@@ -679,7 +680,7 @@ data:extend(
         {
             type = "item",
             name = "item-storage-cell-4k",
-            icon = PATH .. "graficos/itens/item_storage_cell_4k.png",
+            icon = PATH .. "graphics/icons/item_storage_cell_4k.png",
             icon_size = 128,
             subgroup = "storage-ME",
             order = "AE2-storage-ME[item-storage-cell-4k]",
@@ -703,7 +704,7 @@ data:extend(
         {
             type = "item",
             name = "item-storage-cell-16k",
-            icon = PATH .. "graficos/itens/item_storage_cell_16k.png",
+            icon = PATH .. "graphics/icons/item_storage_cell_16k.png",
             icon_size = 128,
             subgroup = "storage-ME",
             order = "AE2-storage-ME[item-storage-cell-16k]",
@@ -727,7 +728,7 @@ data:extend(
         {
             type = "item",
             name = "item-storage-cell-64k",
-            icon = PATH .. "graficos/itens/item_storage_cell_64k.png",
+            icon = PATH .. "graphics/icons/item_storage_cell_64k.png",
             icon_size = 128,
             subgroup = "storage-ME",
             order = "AE2-storage-ME[item-storage-cell-64k]",
@@ -751,7 +752,7 @@ data:extend(
         {
             type = "item",
             name = "logic-processor",
-            icon = PATH .. "graficos/itens/logic_processor.png",
+            icon = PATH .. "graphics/icons/logic_processor.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[logic-processor]",
@@ -766,7 +767,7 @@ data:extend(
         {
             type = "item",
             name = "semi-dark-monitor",
-            icon = PATH .. "graficos/itens/semi_dark_monitor.png",
+            icon = PATH .. "graphics/icons/semi_dark_monitor.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[semi-dark-monitor]",
@@ -790,7 +791,7 @@ data:extend(
         {
             type = "tool",
             name = "singularidade",
-            icon = PATH .. "graficos/itens/singularity.png",
+            icon = PATH .. "graphics/icons/singularity.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[singularidade]",

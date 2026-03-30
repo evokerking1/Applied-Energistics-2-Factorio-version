@@ -10,7 +10,7 @@ data:extend(
             type = "assembling-machine",
             name = "inscriber-entidade",
             -- category = "entity",
-            icon = PATH .. "graficos/blocos/inscriber.png",
+            icon = PATH .. "graphics/blocos/inscriber.png",
             icon_size = 128,
             icon_mipmaps = 4,
             minable = {mining_time = 1, result = "inscriber"},
@@ -26,9 +26,9 @@ data:extend(
             -- dying_explosion = "big-explosion",
             dying_explosion = "assembling-machine-2-explosion",
             alert_icon_shift = {-0.09375, -0.375},
-            collision_box = LDAUtils.createBoundingBox(-1.2, 1.2),
-            selection_box = LDAUtils.createBoundingBox(-1.5, 1.5),
-            drawing_box = LDAUtils.createBoundingBox(-1.5, 1.5),
+            collision_box = LDAUtils.createBoundingBox(1.2, 1.2),
+            selection_box = LDAUtils.createBoundingBox(1.5, 1.5),
+            drawing_box = LDAUtils.createBoundingBox(1.5, 1.5),
             energy_source = utilsEnergySource.createElectricEnergySource(
                 "secondary-input",
                 -- buffer_capacity
@@ -109,10 +109,10 @@ data:extend(
                 layers = {
                     {
                         frame_count = 1,
-                        filename = PATH .. "graficos/blocos/inscriber.png",
+                        filename = PATH .. "graphics/blocos/inscriber.png",
                         hr_version = {
                             frame_count = 1,
-                            filename = PATH .. "graficos/blocos/inscriber.png",
+                            filename = PATH .. "graphics/blocos/inscriber.png",
                             height = 128,
                             line_length = 1,
                             shift = {0, 0.125},
