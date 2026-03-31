@@ -7,7 +7,7 @@ data:extend({
     {
         type = "resource",
         name = "cubo-misterioso",
-        icon = PATH .. "graphics/blocos/the_mysterious_cube.png",
+        icon = PATH .. "graphics/entity/the_mysterious_cube.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = { "placeable-neutral" },
@@ -77,17 +77,17 @@ data:extend({
         stages = {
             sheet = {
                 frame_count = 1,
-                filename = PATH .. "graphics/blocos/the_mysterious_cube.png",
+                filename = PATH .. "graphics/entity/the_mysterious_cube.png",
                 hr_version = {
                     frame_count = 1,
-                    filename = PATH .. "graphics/blocos/the_mysterious_cube.png",
+                    filename = PATH .. "graphics/entity/the_mysterious_cube.png",
                     scale = 0.5,
                     priority = "extra-high",
                     size = 128,
                     variation_count = 1
                 },
                 {
-                    filename = PATH .. "graphics/blocos/the_mysterious_cube.png",
+                    filename = PATH .. "graphics/entity/the_mysterious_cube.png",
                     height = 128,
                     shift = { 0.3125, 0.203125 },
                     priority = "extra-high",

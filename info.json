@@ -10,9 +10,16 @@
     "dependencies": [
         "base >= 2.0.0",
         "flib",
-        "LDA-LIB >= 0.0.9",
+        "LDA-LIB >= 0.0.10",
         "?All-The-Mods-Translated-BR >= 0.0.38"
     ],
+    "quality_required": true,
+    "space_travel_required": true,
+    "segmented_units_required": true,
+    "expansion_shaders_required": true,
+    "freezing_required": true,
+    "rail_bridges_required": true,
+    "spoiling_required": true,
     "license": "GNU General Public License v3.0",
     "thumbnail": "thumbnail.png"
 }

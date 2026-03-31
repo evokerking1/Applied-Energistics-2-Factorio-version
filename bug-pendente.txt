@@ -1,1 +1,1 @@
-Falha ao carregar mods: File __Applied-Energistics-2__/graphics/icons/nether-quartz-ore1.png not found
+Falha ao carregar mods: File __Applied-Energistics-2__/graphics/icons/nether-quartz-ore not found
