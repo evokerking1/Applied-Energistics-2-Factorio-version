@@ -6,7 +6,7 @@ local baseResourceMultiplier = 0.20
 data:extend({
     {
         type = "resource",
-        name = "cubo-misterioso",
+        name = "mysterious-cube.",
         icon = PATH .. "graphics/entity/the_mysterious_cube.png",
         icon_size = 128,
         icon_mipmaps = 4,
@@ -59,8 +59,8 @@ data:extend({
             { 1.5,  1.5 }
         },
         autoplace = {
-            name = "cubo-misterioso",
-            order = "d[ore]-a[cubo-misterioso]",
+            name = "mysterious-cube",
+            order = "d[ore]-a[mysterious-cube]",
             --Densidade base do recurso.
             base_density = 10 * baseResourceMultiplier,
             base_spots_per_km2 = 7.5 * baseResourceMultiplier,

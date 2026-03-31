@@ -11,7 +11,8 @@ require("data.processors")
 require("data.items")
 
 -- pesquisas
-require("data/pesquisa/AE2_pesquisa.lua")
+require("data.pesquisa.AE2_pesquisa")
+require("data.pesquisa.on_craft_triggers_pesquisa")
 
 -- blocos
 -- require("data/blocos/1k_crafting_storage.lua")
