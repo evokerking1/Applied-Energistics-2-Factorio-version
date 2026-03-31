@@ -6,51 +6,55 @@ local PATH = LDA.setBasePath("Applied-Energistics-2")
 -- LDA.createTechnologyMineEntityTrigger(name, unlocks, prerequisites, mine_entity)
 
 data:extend(
-    -- quando minerar 1 mysterious-cube desbloquear certus
-    LDA.createTechnologyMineEntityTrigger(
-        "certus-discovery",
-        -- unlocks
-        {
-            "certus-quartz-crystal",
-        },
-        -- prerequisites
-        {"automation-3"},
-        -- mine_entity
-        "mysterious-cube"
-    ),
-    -- quando minerar 1 mysterious-cube desbloquear certus
-    LDA.createTechnologyMineEntityTrigger(
-        "budding-certus-blocks",
-        -- unlocks
-        {
-            "certus-quartz-crystal",
-            "certus-quartz-dust",
-            "damaged-budding-certus-quartz",
-            "chipped-budding-certus-quartz",
-            "flawed-budding-certus-quartz",
-            "certus-quartz-block"
-        },
-        -- prerequisites
-        {"automation-3"},
-        -- mine_entity
-        "mysterious-cube"
-    )
+    {
+        -- quando minerar 1 mysterious-cube desbloquear certus
+        LDA.createTechnologyMineEntityTrigger(
+            "certus-discovery",
+            -- unlocks
+            {
+                "certus-quartz-crystal"
+            },
+            -- prerequisites
+            {"automation-3"},
+            -- mine_entity
+            "mysterious-cube"
+        ),
+        -- quando minerar 1 mysterious-cube desbloquear certus
+        LDA.createTechnologyMineEntityTrigger(
+            "budding-certus-blocks",
+            -- unlocks
+            {
+                "certus-quartz-crystal",
+                "certus-quartz-dust",
+                "damaged-budding-certus-quartz",
+                "chipped-budding-certus-quartz",
+                "flawed-budding-certus-quartz",
+                "certus-quartz-block"
+            },
+            -- prerequisites
+            {"automation-3"},
+            -- mine_entity
+            "mysterious-cube"
+        )
+    }
 )
 
 -- liberando o charger
 data:extend(
-    -- quando minerar 1 certus-quartz-crystal-ore desbloquear charger
-    LDA.createTechnologyMineEntityTrigger(
-        "the-charger",
-        -- unlocks
-        {
-            "charger"
-        },
-        -- prerequisites
-        {"budding-certus-blocks"},
-        -- mine_entity
-        "certus-quartz-crystal-ore"
-    )
+    {
+        -- quando minerar 1 certus-quartz-crystal-ore desbloquear charger
+        LDA.createTechnologyMineEntityTrigger(
+            "the-charger",
+            -- unlocks
+            {
+                "charger"
+            },
+            -- prerequisites
+            {"budding-certus-blocks"},
+            -- mine_entity
+            "certus-quartz-crystal-ore"
+        )
+    }
 )
 
 -- data:extend(
@@ -70,101 +74,101 @@ data:extend(
 --     )
 -- )
 
-data:extend(
-    {
-        {
-            type = "technology",
-            name = "AE2",
-            icon = PATH .. "graphics/technology/AE2.png",
-            icon_size = 126,
-            icon_mipmaps = 4,
-            prerequisites = {
-                "plastics",
-                "automation",
-                "electric-energy-accumulators",
-                "logistics",
-                "advanced-material-processing",
-                "electric-energy-distribution-1"
-            },
-            effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "annihilation-core"
-                },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "blank-pattern",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "cell-component-1k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "cell-component-4k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "cell-component-16k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "cell-component-64k",
-                -- },
-                {
-                    type = "unlock-recipe",
-                    recipe = "formation-core"
-                },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "item-cell-housing",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "item-storage-cell-1k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "item-storage-cell-4k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "item-storage-cell-16k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "item-storage-cell-64k",
-                -- },
-                -- {
-                --     type = "unlock-recipe",
-                --     recipe = "semi-dark-monitor",
-                -- },
-                {
-                    type = "unlock-recipe",
-                    recipe = "calculation-processor"
-                },
-                {
-                    type = "unlock-recipe",
-                    recipe = "engineering-processor"
-                },
-                {
-                    type = "unlock-recipe",
-                    recipe = "logic-processor"
-                }
-            },
-            unit = {
-                count = 500,
-                time = 30,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1}
-                },
-                order = "AE2-group"
-            }
-        }
-    }
-)
+-- data:extend(
+--     {
+--         {
+--             type = "technology",
+--             name = "AE2",
+--             icon = PATH .. "graphics/technology/AE2.png",
+--             icon_size = 126,
+--             icon_mipmaps = 4,
+--             prerequisites = {
+--                 "plastics",
+--                 "automation",
+--                 "electric-energy-accumulators",
+--                 "logistics",
+--                 "advanced-material-processing",
+--                 "electric-energy-distribution-1"
+--             },
+--             effects = {
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "annihilation-core"
+--                 },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "blank-pattern",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "cell-component-1k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "cell-component-4k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "cell-component-16k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "cell-component-64k",
+--                 -- },
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "formation-core"
+--                 },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "item-cell-housing",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "item-storage-cell-1k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "item-storage-cell-4k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "item-storage-cell-16k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "item-storage-cell-64k",
+--                 -- },
+--                 -- {
+--                 --     type = "unlock-recipe",
+--                 --     recipe = "semi-dark-monitor",
+--                 -- },
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "calculation-processor"
+--                 },
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "engineering-processor"
+--                 },
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "logic-processor"
+--                 }
+--             },
+--             unit = {
+--                 count = 500,
+--                 time = 30,
+--                 ingredients = {
+--                     {"automation-science-pack", 1},
+--                     {"logistic-science-pack", 1},
+--                     {"chemical-science-pack", 1}
+--                 },
+--                 order = "AE2-group"
+--             }
+--         }
+--     }
+-- )
 
 -- data:extend({
 --     {

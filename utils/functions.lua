@@ -42,7 +42,7 @@ function Module.createProcessor(processorType)
             {type = "item", name = processorType .. "-processor", amount = 1}
         },
         nil,
-        true
+        false
     )
     return processor
 end
@@ -67,7 +67,7 @@ function Module.createPrintedItem(itemType, ingredientItem)
             {type = "item", name = itemType .. "-press", amount = 2}
         },
         nil,
-        true
+        false
     )
     return printedItem
 end
@@ -91,7 +91,7 @@ function Module.createPressItem(pressType)
             {type = "item", name = pressType .. "-press", amount = 2}
         },
         nil,
-        true
+        false
     )
     return pressItem
 end
@@ -99,7 +99,7 @@ end
 -- Blocos de quartzo Certus em formação, imperfeitos, lascados e danificados, podem ser criados jogando o bloco em formação do nível anterior (ou um Bloco de Quartzo Certus ) em água com um ou mais Cristais de Quartzo Certus Carregados .
 
 -- Flawless budding certus budding não pode ser fabricado, apenas encontrado no mundo.
-function Module.BuddingCertusQuartz(name)
+function Module.BuddingCertusQuartz(name,ingredients)
     return LDA.createThrowInWaterItemWithRecipe(
         name,
         60,
