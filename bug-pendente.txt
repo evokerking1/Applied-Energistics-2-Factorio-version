@@ -1,1 +1,3 @@
-Falha ao carregar mods: File __Applied-Energistics-2__/graphics/icons/nether-quartz-ore not found
+Falha ao carregar mods: The given sprite rectangle (left_top=0x256, right_bottom=128x384) is outside the actual sprite size (left_top=0x0, right_bottom=300x300).
+If this is being used as an icon you may need to define the icon_size property.
+See the log file for more information.: __Applied-Energistics-2__/graphics/icons/nether-quartz-ore.png
