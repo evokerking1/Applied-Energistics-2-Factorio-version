@@ -1,18 +1,18 @@
 -- presets Basicos do mods
 require("data.AE2-grupos")
+require("control.meteorite")
 -- require("control/certus-quartz-crystal.lua")
--- require("control/cubo-misterioso.lua")
 
 -- recursos
-require("data.ores")
+-- require("data.ores")
 
 -- receitas
-require("data.processors")
-require("data.items")
+-- require("data.processors")
+-- require("data.items")
 
 -- pesquisas
-require("data.pesquisa.AE2_pesquisa")
-require("data.pesquisa.on_craft_triggers_pesquisa")
+-- require("data.pesquisa.AE2_pesquisa")
+-- require("data.pesquisa.on_craft_triggers_pesquisa")
 
 -- blocos
 -- require("data/blocos/1k_crafting_storage.lua")
