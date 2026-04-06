@@ -7,7 +7,7 @@ require("data.meteorite")
 -- require("data.ores")
 
 -- receitas
--- require("data.processors")
+require("data.processors")
 -- require("data.items")
 
 -- pesquisas

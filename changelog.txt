@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.16
+Date: 06/04/2026
+  changes:
+    - meteorite-loot
+    - meteorite-spawn
+    - It is now ready to begin the tech tree development phase.
+    - Adds a meteorite spawn system and associated settings.
+  bugsFixed:
+    - updated bugs.
+    - control bugs fixed.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.15
+Date: 01/04/2026
+  bugsFixed:
+    - updated bugs.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.14
 Date: 01/01/2026
   changes:
