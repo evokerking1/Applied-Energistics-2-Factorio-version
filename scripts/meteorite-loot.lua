@@ -5,7 +5,7 @@ local MeteoriteLoot = {}
 --- @return table[]
 function MeteoriteLoot.getStarterLoot()
     return {
-        { name = "engineering-processor-press", count = 1 },
+        { name = "silicon-press", count = 1 },
         { name = "engineering-processor-press", count = 1 },
         { name = "logic-processor-press", count = 1 },
         { name = "calculation-processor-press", count = 1 }

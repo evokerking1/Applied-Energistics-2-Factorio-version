@@ -27,8 +27,8 @@ data:extend({
         setting_type = "runtime-global",
         localised_name = {"", "[AE2] Meteorite Spawn Interval (Minutes)"},
         localised_description = {"", "Define o intervalo, em minutos, entre o spawn dos meteoritos."},
-        default_value = 20,
-        minimum_value = 1,
+        default_value = 60,
+        minimum_value = 2,
         maximum_value = 1440
     }
 })
