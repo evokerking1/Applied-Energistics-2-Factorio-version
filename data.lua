@@ -1,6 +1,6 @@
 -- presets Basicos do mods
 require("data.AE2-grupos")
-require("control.meteorite")
+require("data.meteorite")
 -- require("control/certus-quartz-crystal.lua")
 
 -- recursos
