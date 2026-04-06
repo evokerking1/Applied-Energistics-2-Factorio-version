@@ -1,6 +1,7 @@
 -- scripts\meteorite-spawn.lua
 local LDA = require("__LDA-LIB__/init")
 local LDAutils = LDA.utils
+local LDAambientEffects = LDA.utilsAmbientEffects
 -- LDAutils.getRandomPositionAround(centerX, centerY,SPAWN_RADIUS_MIN,SPAWN_RADIUS_MAX)
 local MeteoriteLoot = require("scripts.meteorite-loot")
 
@@ -45,44 +46,6 @@ local function findValidMeteoritePosition(surface, near_position)
     return nil
 end
 
---- Cria uma explosão visual no local.
---- @param surface LuaSurface
---- @param position MapPosition
---- @return nil
-local function createExplosion(surface, position)
-    surface.create_entity({
-        name = "big-explosion",
-        position = position
-    })
-
-    surface.create_entity({
-        name = "crash-site-explosion-smoke",
-        position = position
-    })
-end
-
---- Cria fogo decorativo ao redor do meteorito.
---- @param surface LuaSurface
---- @param center MapPosition
---- @param count number|nil
---- @return nil
-local function createCrashFire(surface, center, count)
-    local fire_count = count or math.random(4, 8)
-
-    for _ = 1, fire_count do
-        local fire_position = LDAutils.getRandomPositionAround(center.x, center.y, 2, 7)
-
-        surface.create_entity({
-            name = "crash-site-fire-flame",
-            position = fire_position
-        })
-
-        surface.create_entity({
-            name = "crash-site-fire-smoke",
-            position = fire_position
-        })
-    end
-end
 
 --- Cria destroços pequenos espalhados ao redor.
 --- @param surface LuaSurface
@@ -113,45 +76,17 @@ local function createSmallWrecks(surface, center, count)
     end
 end
 
---- Cria explosões secundárias aleatórias próximas do impacto.
---- @param surface LuaSurface
---- @param center MapPosition
---- @param count number|nil
---- @return nil
-local function createSecondaryExplosions(surface, center, count)
-    local explosion_count = count or math.random(2, 4)
-
-    for _ = 1, explosion_count do
-        local explosion_position = LDAutils.getRandomPositionAround(center.x, center.y, 2, 8)
-
-        surface.create_entity({
-            name = "big-explosion",
-            position = explosion_position
-        })
-    end
-end
-
---- Cria marcas de impacto no chão.
---- @param surface LuaSurface
---- @param position MapPosition
---- @return nil
-local function createScorchmark(surface, position)
-    surface.create_entity({
-        name = "medium-scorchmark-tintable",
-        position = position
-    })
-end
 
 --- Cria o pacote visual completo do impacto do meteorito.
 --- @param surface LuaSurface
 --- @param position MapPosition
 --- @return nil
 local function createMeteorImpactEffects(surface, position)
-    createExplosion(surface, position)
-    createSecondaryExplosions(surface, position)
-    createCrashFire(surface, position)
+    LDAambientEffects.createExplosion(surface, position)
+    LDAambientEffects.createSecondaryExplosions(surface, position)
+    LDAambientEffects.createCrashFire(surface, position)
     createSmallWrecks(surface, position)
-    createScorchmark(surface, position)
+    LDAambientEffects.createScorchmark(surface, position)
 end
 
 --- Cria um meteorito com loot.

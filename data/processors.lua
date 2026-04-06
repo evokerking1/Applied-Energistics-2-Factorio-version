@@ -1,4 +1,3 @@
----@diagnostic disable: redundant-parameter
 local functions = require("utils.functions")
 
 -- PRESS

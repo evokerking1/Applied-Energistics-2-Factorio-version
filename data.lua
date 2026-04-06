@@ -4,7 +4,7 @@ require("data.meteorite")
 -- require("control/certus-quartz-crystal.lua")
 
 -- recursos
--- require("data.ores")
+require("data.ores")
 
 -- receitas
 require("data.processors")

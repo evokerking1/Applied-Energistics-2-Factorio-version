@@ -10,7 +10,7 @@
     "dependencies": [
         "base >= 2.0.0",
         "flib",
-        "LDA-LIB >= 0.0.10",
+        "LDA-LIB >= 0.0.11",
         "?All-The-Mods-Translated-BR >= 0.0.38"
     ],
     "quality_required": true,
